@@ -8,6 +8,5 @@ bin/
 obj/
 #同obj說明
 .vs/
-
 #檔案
 *.sln
