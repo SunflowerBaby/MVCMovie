@@ -1,0 +1,12 @@
+﻿#加在裡面的資料夾或檔案名稱，將會被git忽略，不列入track。
+#資料夾
+bin/
+obj/
+.vs/
+#檔案
+*.sln
+
+
+/GitHub/MVCMovie/obj
+/GitHub/MVCMovie/bin
+/GitHub/MVCMovie/.vs
