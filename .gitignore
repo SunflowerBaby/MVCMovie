@@ -13,3 +13,5 @@ lib/
 
 #檔案
 *.sln
+*.mdf
+*.ldf
