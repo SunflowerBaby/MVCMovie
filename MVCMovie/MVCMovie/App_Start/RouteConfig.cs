@@ -14,6 +14,14 @@ namespace MVCMovie
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Test",
+                url: "{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                // 利用 Regex 語法同時允許 About 和 Contact
+                constraints: new { action = " (About|Contact) " }     
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
